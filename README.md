@@ -21,7 +21,7 @@ Table of contents:
 In this simple example we take a JSON object and print all of the properties in it to the CSV.
 
 ```javascript
-import CSVExportService from 'utils/csv-exporter/CSVExportService';
+import CSVExportService from 'json2csvexporter';
 ...
 const vehiclesJSON = [
   {id: 1, make: 'Toyota', model: 'Corolla', year: 2014},
@@ -46,7 +46,7 @@ id,make,model,year
 In this example we will take the same JSON object from the previous example, but only print a list of proprties that we want. We will also decorate the headers with different names.
 
 ```javascript
-import CSVExportService from 'utils/csv-exporter/CSVExportService';
+import CSVExportService from 'json2csvexporter';
 ...
 const csvColumnsList = ['id', 'make', 'model', 'year'];
 const csvColumnsMap = {
@@ -81,7 +81,7 @@ ID,Make,Model Name,Year
 In this example we will make a TSV file and create formatter functions to style the content of certain properties.
 
 ```javascript
-import CSVExportService from 'utils/csv-exporter/CSVExportService';
+import CSVExportService from 'json2csvexporter';
 ...
 // using the same vehiclesJSON as before...
 
