@@ -1,0 +1,42 @@
+{
+  "name": "json2csvexporter",
+  "version": "0.0.1",
+  "author": "Filip Danic <filip@spicefactory.com> (danicfilip.com)",
+  "main": "lib/CSVExportService.js",
+  "scripts": {
+    "compile": "babel --presets es2015,stage-0 -d lib/ src/",
+    "prepublish": "npm run compile"
+  },
+  "description": "A simple JSON to CSV converter.",
+  "contributors": [
+    {
+      "name": "Filip Danic",
+      "email": "filip@spicefactory.co",
+      "twitter": "@DanicFilip",
+      "github": "filipdanic"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:filipdanic/json2csvexporter.git"
+  },
+  "keywords": [
+    "csv",
+    "json2csv",
+    "exporter"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.1.18",
+    "babel-core": "^6.1.18",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "babel-preset-stage-0": "^6.1.18"
+  },
+  "engine": "node >= 0.10.x",
+  "homepage": "https://github.com/filipdanic/json2csvexporter",
+  "bugs": {
+    "url": "https://github.com/filipdanic/json2csvexporter/issues"
+  },
+  "private": false,
+  "license": "MIT"
+}
