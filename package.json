@@ -1,6 +1,6 @@
 {
   "name": "json2csvexporter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Filip Danic <filip@spicefactory.com> (danicfilip.com)",
   "main": "lib/CSVExportService.js",
   "scripts": {
