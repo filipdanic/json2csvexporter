@@ -4,6 +4,10 @@ This is a simple little library for exporting simple JSON structures to a CSV fi
 
 Currently, json2csvexporter does not support nested JSON data. As such, you will probably need to reduce complex structures into a simple `key: value` schema.
 
+To install:
+
+`npm i json2csvexporter --save`
+
 Table of contents:
 
 1. Simple Example
