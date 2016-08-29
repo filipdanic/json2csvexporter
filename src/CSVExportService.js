@@ -12,12 +12,28 @@ export default class CSVExportService {
   constructor(options) {
     this.options = options || {};
   }
+
+  /**
+   * Shorthand for createCSV() with a pre-set writerType
+  */
+  createCSVBlob(data) {
+    return this.createCSV(data);
+  }
+
+  /**
+    * Shorthand for createCSV() with a pre-set writerType
+  */
+  dataToString(data) {
+    return this.createCSV(data, 'string');
+  }
+
   /**
    * Creates a Blob based on the provided data and configuration options.
    * @param  {Array} data - An array of JSON objects that will be mapped to the Blob.
-   * @return {Object} - The Blob object. Is an instance of Blob, but typeof Object.
+   * @param  {String} writerType - ENUM for choosing the return type. Default to 'blo'
+   * @return {Object|String} - The Blob object (Is an instance of Blob, but typeof Object) or a String version of the CSV with newlines. 
    */
-  createCSVBlob(data) {
+  createCSV(data, writerType = 'blob') {
     const {
       columns: optionsColumns,
       contentType: optionsContentType,
@@ -43,7 +59,7 @@ export default class CSVExportService {
       headers.forEach(header => writer.writeValue(getFormater(header)(row[header])));
       writer.writeLine();
     });
-    return writer.toBlob();
+    return writerType === 'string' ? writer.toString() : writer.toBlob();
   }
   /**
    * Triggers the download of the file.
@@ -70,7 +86,7 @@ export default class CSVExportService {
    */
   downloadCSV(data) {
     try {
-      const blob = this.createCSVBlob(data);
+      const blob = this.createCSV(data, 'blob');
       const filename = this.options.filename || `export-${new Date().getTime() / 1000 | 0}.csv`;
       this.download(blob, filename);
     } catch (err) {
@@ -82,6 +98,11 @@ export default class CSVExportService {
       }
     }
   }
+
+  toString(data) {
+    const writer = new WriterService(delimeter, contentType);
+  }
+
   /**
    * Shorthand for constructor.
    * @param  {Object} options

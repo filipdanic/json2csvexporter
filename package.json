@@ -22,7 +22,12 @@
   },
   "keywords": [
     "csv",
+    "tsv",
     "json2csv",
+    "json2tsv",
+    "csv export",
+    "download csv",
+    "csv client download",
     "exporter"
   ],
   "devDependencies": {

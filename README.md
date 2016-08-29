@@ -13,6 +13,7 @@ Table of contents:
 1. Simple Example
 2. Example with Custom Options
 3. Example with TSV and Formaters
+4. JSON to CSV/TSV encoded String/Blob (without downloading on the client)
 4. API and Options Docs
 5. Contributing
 
@@ -113,6 +114,31 @@ id  make  model year
 #2  Ford  Mustang 2012
 #3  Toyota  Unkown model  Unkown year
 ```
+
+## JSON to CSV/TSV encoded String/Blob (without downloading on the client)
+
+```javascript
+import CSVExportService from 'json2csvexporter';
+...
+const vehiclesJSON = [
+  {id: 1, make: 'Toyota', model: 'Corolla', year: 2014},
+  {id: 2, make: 'Ford', model: 'Mustang', year: 2012},
+  {id: 3, make: 'Toyota', model: '', year: ''}
+];
+const exporter = CSVExportService.create();
+exporter.dataToString(vehiclesJSON);
+```
+
+This will return the CSV as a JavaScript String. This allows you to further manipulate the data, save to a file, a database or anything else.
+
+Similarly, calling: 
+
+```javascript
+exporter.createCSVBlob(vehiclesJSON);
+```
+
+Will return a `Blob {size: 76, type: "text/csv"}`, or in other words, a regular JavaScript blob object that is encoded as the type you specified (in this case a plain text/csv). You then manipulate this Blob object however you like.
+
 
 ## API and Options Docs
 
