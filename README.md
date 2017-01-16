@@ -10,12 +10,12 @@ To install:
 
 Table of contents:
 
-1. Simple Example
-2. Example with Custom Options
-3. Example with TSV and Formaters
-4. JSON to CSV/TSV encoded String/Blob (without downloading on the client)
-4. API and Options Docs
-5. Contributing
+1. [Simple Example](#simple-example)
+2. [Example with Custom Options](#example-with-custom-options)
+3. [Example with TSV and Formaters](#example-with-tsv-and-formaters)
+4. [JSON to CSV/TSV encoded String/Blob (without downloading on the client)](#json-to-csvtsv-encoded-stringblob-without-downloading-on-the-client)
+4. [API and Options Docs](#api-and-options-docs)
+5. [Contributing](#contributing)
 
 ## Simple Example
 
@@ -44,7 +44,7 @@ id,make,model,year
 
 ## Example with Custom Options
 
-In this example we will take the same JSON object from the previous example, but only print a list of proprties that we want. We will also decorate the headers with different names.
+In this example, we will take the same JSON object from the previous example, but only print a list of properties that we want. We will also decorate the headers with different names.
 
 ```javascript
 import CSVExportService from 'json2csvexporter';
@@ -79,7 +79,7 @@ ID,Make,Model Name,Year
 
 ## Example with TSV and Formaters
 
-In this example we will make a TSV file and create formatter functions to style the content of certain properties.
+In this example, we will make a TSV file and create formatting functions to style the content of certain properties.
 
 ```javascript
 import CSVExportService from 'json2csvexporter';
@@ -150,9 +150,9 @@ When creating a new `CSVExportService` you can pass in an options objects. These
 
 - `contentType`: the content type of the file. Default is `text/csv`
 
-- `delimeter`: the delimeter to seperate values. Default is a comma.
+- `delimeter`: the delimiter to separate values. The default is a comma.
 
-- `formatters`: an Object. Each property defines how to format a value coresponding to the same key.
+- `formatters`: an Object. Each property defines how to format a value corresponding to the same key.
 
 - `headers`: an Object. Works as a map to stylize keys in the header. E.g. `{firstName: 'First Name'}`
 
