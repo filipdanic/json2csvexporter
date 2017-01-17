@@ -5,7 +5,7 @@
 export default class WriterService {
   /**
    * Default constructors. Takes two optional params.
-   * @param  {String} delimiter - Delimiter character(s) to be used in the CSV.
+   * @param  {String} delimiter - Delimitercharacter(s) to be used in the CSV.
    * @param  {String} contentType - Type of file.
    */
   constructor(delimiter = ',', contentType = 'text/csv') {

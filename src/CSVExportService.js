@@ -31,25 +31,26 @@ export default class CSVExportService {
    * Creates a Blob based on the provided data and configuration options.
    * @param  {Array} data - An array of JSON objects that will be mapped to the Blob.
    * @param  {String} writerType - ENUM for choosing the return type. Default to 'blo'
-   * @return {Object|String} - The Blob object (Is an instance of Blob, but typeof Object) or a String version of the CSV with newlines. 
+   * @return {Object|String} - The Blob object (Is an instance of Blob, but typeof Object) or a String version of the CSV with newlines.
    */
   createCSV(data, writerType = 'blob') {
     const {
       columns: optionsColumns,
       contentType: optionsContentType,
-      delimeter: optionsDelimeter,
+      delimeter: optionsDelimeter, // delimeter is a common miss-spelling of “delimiter”
+      delimiter: optionsDelimiter,
       formatters: optionsFormatters,
       headers: optionsHeaders,
       includeHeaders: optionsIncludeHeaders,
     } = this.options || {};
     const contentType = optionsContentType || 'text/csv';
-    const delimeter = optionsDelimeter || ',';
+    const delimiter = ptionsDelimiter || optionsDelimeter || ',';
     const formatters = optionsFormatters || {};
     const getFormater = header => formatters[header] || (v => v);
     const headerNames = optionsHeaders || {};
     const headers = optionsColumns || Object.getOwnPropertyNames(data[0]);
     const includeHeaders = optionsIncludeHeaders;
-    const writer = new WriterService(delimeter, contentType);
+    const writer = new WriterService(delimiter, contentType);
 
     if (includeHeaders === undefined || includeHeaders) {
       headers.forEach(header => writer.writeValue(headerNames[header] || header));
@@ -100,7 +101,7 @@ export default class CSVExportService {
   }
 
   toString(data) {
-    const writer = new WriterService(delimeter, contentType);
+    const writer = new WriterService(delimiter, contentType);
   }
 
   /**
