@@ -51,9 +51,9 @@ import CSVExportService from 'json2csvexporter';
 ...
 const csvColumnsList = ['id', 'make', 'model', 'year'];
 const csvColumnsMap = {
-  id: 'ID', 
+  id: 'ID',
   make: 'Make',
-  model: 'Model Name', 
+  model: 'Model Name',
   year: 'Year'
 };
 const vehiclesJSON = [
@@ -89,7 +89,7 @@ import CSVExportService from 'json2csvexporter';
 const exporter = CSVExportService.create({
   contentType: 'text/tsv',
   filename: 'newformat.tsv',
-  delimeter: '\t',
+  delimiter: '\t',
   formatters: {
     id: (id) => {
       return `#${id}`;
@@ -131,7 +131,7 @@ exporter.dataToString(vehiclesJSON);
 
 This will return the CSV as a JavaScript String. This allows you to further manipulate the data, save to a file, a database or anything else.
 
-Similarly, calling: 
+Similarly, calling:
 
 ```javascript
 exporter.createCSVBlob(vehiclesJSON);
@@ -150,7 +150,7 @@ When creating a new `CSVExportService` you can pass in an options objects. These
 
 - `contentType`: the content type of the file. Default is `text/csv`
 
-- `delimeter`: the delimiter to separate values. The default is a comma.
+- `delimiter`: the delimiter to separate values. The default is a comma.
 
 - `formatters`: an Object. Each property defines how to format a value corresponding to the same key.
 
