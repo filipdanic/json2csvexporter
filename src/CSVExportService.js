@@ -44,7 +44,7 @@ export default class CSVExportService {
       includeHeaders: optionsIncludeHeaders,
     } = this.options || {};
     const contentType = optionsContentType || 'text/csv';
-    const delimiter = ptionsDelimiter || optionsDelimeter || ',';
+    const delimiter = optionsDelimeter || ',';
     const formatters = optionsFormatters || {};
     const getFormater = header => formatters[header] || (v => v);
     const headerNames = optionsHeaders || {};
