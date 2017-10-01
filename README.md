@@ -12,7 +12,7 @@ Table of contents:
 
 1. [Simple Example](#simple-example)
 2. [Example with Custom Options](#example-with-custom-options)
-3. [Example with TSV and Formaters](#example-with-tsv-and-formaters)
+3. [Example with TSV and Formatters](#example-with-tsv-and-formaters)
 4. [JSON to CSV/TSV encoded String/Blob (without downloading on the client)](#json-to-csvtsv-encoded-stringblob-without-downloading-on-the-client)
 4. [API and Options Docs](#api-and-options-docs)
 5. [Contributing](#contributing)
@@ -41,6 +41,9 @@ id,make,model,year
 2,Ford,Mustang,2012
 3,Toyota,,
 ```
+
+[Online Demo](http://requirebin.com/?gist=a830925068890ad30533e13e51206194)
+
 
 ## Example with Custom Options
 
@@ -77,7 +80,7 @@ ID,Make,Model Name,Year
 3,Toyota,,
 ```
 
-## Example with TSV and Formaters
+## Example with TSV and Formatters
 
 In this example, we will make a TSV file and create formatting functions to style the content of certain properties.
 
@@ -95,10 +98,10 @@ const exporter = CSVExportService.create({
       return `#${id}`;
     },
     model: (model) => {
-      return model || 'Unkown model';
+      return model || 'Unknown model';
     },
     year: (year) => {
-      return year || 'Unkown year';
+      return year || 'Unknown year';
     }
   }
 });
@@ -112,7 +115,7 @@ This will generate the following TSV:
 id  make  model year
 #1  Toyota  Corolla 2014
 #2  Ford  Mustang 2012
-#3  Toyota  Unkown model  Unkown year
+#3  Toyota  Unknown model  Unknown year
 ```
 
 ## JSON to CSV/TSV encoded String/Blob (without downloading on the client)
@@ -162,7 +165,7 @@ When creating a new `CSVExportService` you can pass in an options objects. These
 
 ### API
 
-The `CSVExportService` implements two static methods: `create(options)` which returns a new instance of CSVExportSevice and `download(data, options)` which initalizes a new service and downloads the data right away.
+The `CSVExportService` implements two static methods: `create(options)` which returns a new instance of CSVExportService and `download(data, options)` which initializes a new service and downloads the data right away.
 
 For more info, dive into the code. It is a very simple class.
 
@@ -170,10 +173,11 @@ For more info, dive into the code. It is a very simple class.
 ## Contributing
 
 1. Submit issues or suggest features.
-2. Send PRs with bugfixes, tests, new methods, better docs etc.
+2. Send PRs with bug fixes, tests, new methods, better docs etc.
 3. Share the love!
 
 ## Contributor list
 
 1. [https://github.com/filipdanic](filipdanic)
 2. [https://github.com/androidfanboi](androidfanboi)
+3. [https://github.com/erickzhao](erickzhao)
