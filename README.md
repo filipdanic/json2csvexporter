@@ -177,3 +177,4 @@ For more info, dive into the code. It is a very simple class.
 
 1. [https://github.com/filipdanic](filipdanic)
 2. [https://github.com/androidfanboi](androidfanboi)
+3. [https://github.com/bira91](bira)
