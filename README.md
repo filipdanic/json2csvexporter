@@ -172,3 +172,8 @@ For more info, dive into the code. It is a very simple class.
 1. Submit issues or suggest features.
 2. Send PRs with bugfixes, tests, new methods, better docs etc.
 3. Share the love!
+
+## Contributor list
+
+1. [https://github.com/filipdanic](filipdanic)
+2. [https://github.com/androidfanboi](androidfanboi)
