@@ -175,6 +175,6 @@ For more info, dive into the code. It is a very simple class.
 
 ## Contributor list
 
-1. [https://github.com/filipdanic](filipdanic)
-2. [https://github.com/androidfanboi](androidfanboi)
-3. [https://github.com/erickzhao](erickzhao)
+1. [@filipdanic](https://github.com/filipdanic)
+2. [@androidfanboi](https://github.com/androidfanboi)
+3. [@erickzhao](https://github.com/erickzhao)
