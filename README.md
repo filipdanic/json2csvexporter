@@ -14,8 +14,9 @@ Table of contents:
 2. [Example with Custom Options](#example-with-custom-options)
 3. [Example with TSV and Formatters](#example-with-tsv-and-formaters)
 4. [JSON to CSV/TSV encoded String/Blob (without downloading on the client)](#json-to-csvtsv-encoded-stringblob-without-downloading-on-the-client)
-4. [API and Options Docs](#api-and-options-docs)
-5. [Contributing](#contributing)
+5. [API and Options Docs](#api-and-options-docs)
+6  [Browsers Support](#browsers-support)
+7. [Contributing](#contributing)
 
 ## Simple Example
 
@@ -166,7 +167,7 @@ The `CSVExportService` implements two static methods: `create(options)` which re
 
 For more info, dive into the code. It is a very simple class.
 
-## Browsers support 
+## Browsers Support 
 
 | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/edge.png" alt="IE / Edge" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/firefox.png" alt="Firefox" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/chrome.png" alt="Chrome" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/safari.png" alt="Safari" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Safari | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/opera.png" alt="Opera" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Opera | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/safari-ios.png" alt="iOS Safari" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>iOS Safari |
 | --------- | --------- | --------- | --------- | --------- | --------- |
@@ -184,3 +185,4 @@ For more info, dive into the code. It is a very simple class.
 1. [@filipdanic](https://github.com/filipdanic)
 2. [@androidfanboi](https://github.com/androidfanboi)
 3. [@erickzhao](https://github.com/erickzhao)
+4. [@bira91](https://github.com/bira91)
