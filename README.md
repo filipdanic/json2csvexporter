@@ -12,10 +12,10 @@ Table of contents:
 
 1. [Simple Example](#simple-example)
 2. [Example with Custom Options](#example-with-custom-options)
-3. [Example with TSV and Formatters](#example-with-tsv-and-formaters)
+3. [Example with TSV and Formatters](#example-with-tsv-and-formatters)
 4. [JSON to CSV/TSV encoded String/Blob (without downloading on the client)](#json-to-csvtsv-encoded-stringblob-without-downloading-on-the-client)
 5. [API and Options Docs](#api-and-options-docs)
-6  [Browsers Support](#browsers-support)
+6. [Browsers Support](#browsers-support)
 7. [Contributing](#contributing)
 
 ## Simple Example
