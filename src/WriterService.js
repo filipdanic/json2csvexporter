@@ -28,7 +28,7 @@ export default class WriterService {
    * @param  {string} string - The input string.
    * @return {string} - A safe strings wrapped in quotes.
    */
-  static wrapWithQuotes(string) {
+  wrapWithQuotes(string) {
     const safeString = string.replace(/"/g, '""');
     return `"${safeString}"`;
   }
@@ -37,7 +37,7 @@ export default class WriterService {
    * @param {*} value
    * @return {string}
    */
-  static sanitizeValue(value) {
+  sanitizeValue(value) {
     if (
       value === undefined ||
       value === null ||
