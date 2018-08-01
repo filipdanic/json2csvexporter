@@ -112,7 +112,8 @@ export default class CSVExportService {
 
   /**
    * Shorthand for initialization and download() call.
-   * @param  {Array} data - An array of objects to map and store.
+   * @param {Array} data - An array of objects to map and store.
+   * @param {Object} options
    * @return {undefined}
    */
   static download(data, options = {}) {
