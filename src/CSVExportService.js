@@ -81,6 +81,7 @@ export default class CSVExportService {
     link.click();
     document.body.removeChild(link);
   }
+
   /**
    * Creates and passes the blob and filename params to the download() method. In case of error, calls the onError callback (if provided) and prints a error mesage if devMode is enabled via options.
    * @param  {Array} data - An array of objects to map and store.
@@ -100,10 +101,6 @@ export default class CSVExportService {
     }
   }
 
-  toString(data) {
-    const writer = new WriterService(delimiter, contentType);
-  }
-
   /**
    * Shorthand for constructor.
    * @param  {Object} options
@@ -112,6 +109,7 @@ export default class CSVExportService {
   static create(options) {
     return new CSVExportService(options);
   }
+
   /**
    * Shorthand for initialization and download() call.
    * @param  {Array} data - An array of objects to map and store.
