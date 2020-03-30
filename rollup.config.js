@@ -13,12 +13,6 @@ export default {
       sourcemap: true,
     },
     {
-      file: `lib/${name}.js`,
-      format: 'cjs',
-      name: name,
-      sourcemap: true,
-    },
-    {
       file: `module/${name}.js`,
       format: 'esm',
       name: name,

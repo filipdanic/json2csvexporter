@@ -5,7 +5,9 @@
   "main": "dist/CSVExportService.js",
   "module": "module/CSVExportService.js",
   "scripts": {
-    "compile": "rollup --config",
+    "rollup": "rollup --config",
+    "babel": "npx babel -d lib/ src/",
+    "compile": "npm run babel && npm run rollup",
     "prepublish": "npm run compile"
   },
   "description": "A simple JSON to CSV converter.",
