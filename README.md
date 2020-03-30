@@ -8,6 +8,11 @@ To install:
 
 `npm i json2csvexporter --save`
 
+Provided are:
+* umd-formatted file: dist/CSVExportService.js (browser-ready)
+* commonjs-formatted file: lib/CSVExportService.js
+* es-module: module/CSVExportService.js
+
 Table of contents:
 
 1. [Simple Example](#simple-example)
@@ -167,11 +172,11 @@ The `CSVExportService` implements two static methods: `create(options)` which re
 
 For more info, dive into the code. It is a very simple class.
 
-## Browsers Support 
+## Browsers Support
 
 | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/edge.png" alt="IE / Edge" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/firefox.png" alt="Firefox" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/chrome.png" alt="Chrome" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/safari.png" alt="Safari" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Safari | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/opera.png" alt="Opera" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Opera | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/safari-ios.png" alt="iOS Safari" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>iOS Safari |
 | --------- | --------- | --------- | --------- | --------- | --------- |
-| IE10, IE11, Edge| 4+ | 13+ | 5+ | 12+ | 7+ | 
+| IE10, IE11, Edge| 4+ | 13+ | 5+ | 12+ | 7+ |
 
 
 ## Contributing

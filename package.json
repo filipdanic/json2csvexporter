@@ -2,9 +2,10 @@
   "name": "json2csvexporter",
   "version": "0.5.0",
   "author": "Filip Danic <filip@spicefactory.com> (danicfilip.com)",
-  "main": "lib/CSVExportService.js",
+  "main": "dist/CSVExportService.js",
+  "module": "module/CSVExportService.js",
   "scripts": {
-    "compile": "babel -d lib/ src/",
+    "compile": "rollup --config",
     "prepublish": "npm run compile"
   },
   "description": "A simple JSON to CSV converter.",
@@ -42,6 +43,8 @@
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
-    "core-js": "^3.6.4"
+    "core-js": "^3.6.4",
+    "rollup": "^2.3.0",
+    "rollup-plugin-babel": "^4.4.0"
   }
 }
