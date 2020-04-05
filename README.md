@@ -25,7 +25,7 @@ Table of contents:
 
 ## Simple Example
 
-In this simple example we take a JSON object and print all of the properties in it to the CSV. There is also [an online demo available via RequireBin.](http://requirebin.com/?gist=a830925068890ad30533e13e51206194)
+In this simple example we take a JSON object and print all of the properties in it to the CSV. There is also [an online demo available via CodeSandbox.](https://codesandbox.io/s/json2csvexporter-e8xbl)
 
 ```javascript
 import CSVExportService from 'json2csvexporter';
