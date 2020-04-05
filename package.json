@@ -1,7 +1,7 @@
 {
   "name": "json2csvexporter",
   "version": "0.5.0",
-  "author": "Filip Danic <filip@spicefactory.com> (danicfilip.com)",
+  "author": "Filip Danic <filipdanic7@gmail.com> (https://danicfilip.com)",
   "main": "dist/CSVExportService.js",
   "module": "module/CSVExportService.js",
   "scripts": {
@@ -14,9 +14,25 @@
   "contributors": [
     {
       "name": "Filip Danic",
-      "email": "filip@spicefactory.co",
+      "email": "filipdanic7@gmail.com",
       "twitter": "@DanicFilip",
       "github": "filipdanic"
+    },
+    {
+      "name": "Onno van der Zee",
+      "github": "ovanderzee"
+    },
+    {
+      "name": "Erick Zhao",
+      "github": "erickzhao"
+    },
+    {
+      "name": "androidfanboi",
+      "github": "androidfanboi"
+    },
+    {
+      "name": "Rajat",
+      "github": "RajatDM1"
     }
   ],
   "repository": {
